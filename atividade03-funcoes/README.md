@@ -9,9 +9,9 @@ parâmetro numérico e retorna o valor do seu fatorial.
 
 Exemplo:
 
-!3 = 3*2*1
+!3 = 3\*2\*1
 
-!5 = 5*4*3*2*1
+!5 = 5\*4\*3\*2\*1
 
 ## 📜 Desafio 02 - Palavras distintas
 
