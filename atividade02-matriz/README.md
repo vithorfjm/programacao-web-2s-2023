@@ -1,4 +1,4 @@
-# 📚 Atividade 01 - Matriz
+# 📚 Atividade 02 - Matriz
 
 ## 📜 Desafio 01 - Transposição de matriz
 
