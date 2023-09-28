@@ -1,6 +1,6 @@
 const prompt = require('prompt-sync')();
 
-const numeros = prompt("Digite 5 números separados por virgula. Exemplo: 10,20,30,40,50");
+const numeros = prompt("Digite 5 números separados por virgula. Exemplo: 10,20,30,40,50:    ");
 
 function printarNumeros(numerosStr) {
     numerosArray = numerosStr.split(",");
