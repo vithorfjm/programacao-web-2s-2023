@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Formulário</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #373636;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            color: #15AAFF;
+            margin: 20px auto;
+        }
+
+        form {
+            background-color: #15AAFF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            height: 600px;
+            width: 1000px;
+            border-radius: 10px;
+            gap: 40px;
+        }
+
+        .blocos {
+            width: 90%;
+            height: 450px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px
+        }
+
+        .bloco {
+            background-color: #F8F7F3;
+            height: 490px;
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="time"] {
+            padding: 3px 0;
+        }
+
+        input[type="date"] {
+            padding: 10px;
+        }
+
+        label {
+            margin: 4px 0 1px 0;
+        }
+
+        input[type="submit"] {
+            padding: 5px 7px;
+            border: none;
+            background-color: #F8F7F3;
+            color: #15AAFF;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #bebdb7;
+        }
+
+        input[type="submit"]:active {
+            background-color: #373636;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Agendamento Consulta</h1>
+    <form method="POST" action="/dados">
+        <div class="blocos">
+            <aside class="bloco">
+                <h1>Dados Pessoais</h1>
+
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Nome Completo" required>
+
+                <label for="cpf">CPF</label>
+                <input type="text" name="cpf" id="cpf" placeholder="Ex: 000.000.000-00" required>
+
+                <label for="nasc">Data de Nascimento</label>
+                <input type="date" id="nasc" name="nasc" required>
+
+                <label for="cep">CEP</label>
+                <input type="text" name="cep" id="cep" placeholder="Ex: 00.000-000" required>
+
+                <label for="endereco">Endereço</label>
+                <input type="text" name="endereco" id="endereco" placeholder="Endereço" required>
+
+                <label for="UF">UF</label>
+                <input type="text" name="uf" id="uf" placeholder="Ex: DF" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="nome@email.com" required>
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(55) 55555-5555" required>
+
+            </aside>
+
+            <aside class="bloco">
+                <h1>Dados Consulta</h1>
+                <label for="especialidade">Especialidade médica:*</label>
+                <input type="text" id="especialidade" name="especialidade"
+                    placeholder="Ex: Cardiologia, Dermatologia..." required>
+
+                <label for="data">Data:*</label>
+                <input type="date" id="data" name="data" required>
+
+                <label for="hora">Hora:*</label>
+                <input type="time" id="hora" name="hora" required>
+
+                <label for="alergia">Medicamentos Alérgicos:*</label>
+                <input type="text" id="alergia" name="alergia" placeholder="Ex: Antibióticos, Anti-inflamatórios..."
+                    required>
+
+                <label for="info">Informações adicionais:</label>
+                <textarea id="info" name="info" rows="10" cols="50"></textarea>
+            </aside>
+
+        </div>
+        <input type="submit">
+    </form>
+    <script src="/atividades/atividade7/index.js"></script>
+</body>
+
+</html>

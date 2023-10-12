@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #373636;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            color: #15AAFF;
+        }
+
+
+        div {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        p {
+            font-size: large;
+        }
+    </style>
+
+    <title>DADOS</title>
+</head>
+
+<body>
+    <h1>Dados inseridos</h1>
+    <div>
+        <p><strong>Nome:</strong> {{nome}}</p>
+        <p><strong>CPF:</strong> {{cpf}}</p>
+        <p><strong>Data de Nascimento:</strong> {{nasc}}</p>
+        <p><strong>CEP:</strong> {{cep}}</p>
+        <p><strong>Endereço:</strong> {{endereco}}</p>
+        <p><strong>UF:</strong> {{uf}}</p>
+        <p><strong>E-mail:</strong> {{email}}</p>
+        <p><strong>Telefone:</strong> {{telefone}}</p>
+        <p><strong>Especialidade Médica:</strong> {{especialidade}}</p>
+        <p><strong>Data da Consulta:</strong> {{data}} </p>
+        <p><strong>Hora da Consulta:</strong> {{hora}}</p>
+        <p><strong>Medicamentos Alérgicos:</strong> {{alergia}}</p>
+        <p><strong>Informações Adicionais:</strong> {{info}}</p>
+    </div>
+</body>
+
+</html>
